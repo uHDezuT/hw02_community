@@ -38,5 +38,8 @@ class Post(models.Model):
         help_text='Группа, к которой будет относиться пост'
     )
 
+    def __str__(self):
+        return self.text
+
     class Meta:
         ordering = ["-pub_date"]
